@@ -1,6 +1,8 @@
 let clueText = document.getElementById("clue")
 let restartBtn = document.getElementById("restartBtn")
+let clues = document.getElementById("clues")
 let boxes = Array.from(document.getElementsByClassName("box"))
+let nums = Array.from(document.getElementsByClassName("num"))
 
 row = 2
 col = 2
@@ -9,37 +11,50 @@ bg_color = "#37505C"
 letter_color = "#5099ad"
 word_color = "#232d2e"
 
-down = ["5D: See 5-Across",
-    "4D: What food choices are on",
-    "1D: Not well",
-    "2D: Like an octagon or rock music?",
-    "3D: Can be worn or put into the ground"
+across = ["1A:  TTYL",
+    "4A:  _____ cotta (type of clay)",
+    "6A:  Work with dough",
+    "7A:  Depart",
+    "8A:  Pig's home"
 ]
 
-across = ["1A: Risk or wager",
-    "4A: Created",
-    "5A: With 5-Down, Proof School mascot",
-    "6A: The one and ____",
-    "7A: Generic male"
+down = ["4D:  Literally, tackle - ace *",
+    "1D:  Hereditary units",
+    "2D:  Trick or _____",
+    "3D:  Thanksgiving sauce",
+    "5D:  Suffix for lemon or lime"
 ]
 
-solution = "BETMADEHEDGEONLYGUY"
+text = (
+"Across:\n\
+    1.  TTYL\n\
+    4.  _____ cotta (type of clay)\n\
+    6.  Work with dough\n\
+    7.  Depart\n\
+    8.  Pig's home\n\n\
+Down:\n\
+    1.  Hereditary units\n\
+    2.  Trick or _____\n\
+    3.  Thanksgiving sauce\n\
+    4.  Literally, tackle - ace *\n\
+    5.  Suffix for lemon or lime\n"
+)
+
+solution = "GTGTERRAKNEADLEAVESTY"
 
 const startGame = () => {
-    boxes.forEach(box => box.addEventListener("click", boxClicked))
+    for (let i = 0; i < 25; i++) {
+        if (boxes[i].id != "X") {
+            boxes[i].addEventListener("click", function() {select(i)})
+        }
+    }
     document.addEventListener("keydown", input)
-    restartBtn.addEventListener('click', restart)
+    restartBtn.addEventListener("click", restart)
+    clues.textContent = text
 }
 
 function index(row, col) {
     return row * 5 + col
-}
-
-function boxClicked(e) {
-    const id = e.target.id
-    if (id != "X") {
-        select(parseInt(id))
-    }
 }
 
 function select(i) {
@@ -97,11 +112,31 @@ function highlight(color) {
     }
 }
 
+function next_row(r) {
+    if (r + 1 >= 5 || boxes[index(r + 1, col)].id == "X") {
+        return [row + 1, col]
+    } else if (boxes[index(r + 1, col)].firstChild.textContent == "") {
+        return [r + 1, col]
+    } else {
+        return next_row(r + 1)
+    }
+}
+
+function next_col(c) {
+    if (c + 1 >= 5 || boxes[index(row, c + 1)].id == "X") {
+        return [row, col + 1]
+    } else if (boxes[index(row, c + 1)].firstChild.textContent == "") {
+        return [row, c + 1]
+    } else {
+        return next_col(c + 1)
+    }
+}
+
 function next() {
     if (dir == "down") {
-        return [row + 1, col]
+        return next_row(row)
     } else {
-        return [row, col + 1]
+        return next_col(col)
     }
 }
 
@@ -124,26 +159,26 @@ function input(e) {
 
 function write(letter) {
     var b = boxes[index(row, col)]
-    var nq = b.textContent
-    b.textContent = letter
+    var nq = b.firstChild.textContent
+    b.firstChild.textContent = letter
     
     var [r, c] = next()
     var i = index(r, c)
     if (r >= 0 && r < 5 && c >= 0 && c < 5 && boxes[i].id != "X") {
         select(i)
     }
-    setTimeout(function() {check_solve(nq)}, 100)
+    setTimeout(function() {check_solve(nq)}, 10)
 }
 
 function del() {
     var b = boxes[index(row, col)]
-    if (b.textContent != "") {
-        b.textContent = ""
+    if (b.firstChild.textContent != "") {
+        b.firstChild.textContent = ""
     } else {
         var [r, c] = prev()
         var i = index(r, c)
         if (r >= 0 && r < 5 && c >= 0 && c < 5 && boxes[i].id != "X") {
-            boxes[i].textContent = ""
+            boxes[i].firstChild.textContent = ""
             select(i)
         }
     }
@@ -151,17 +186,17 @@ function del() {
 
 function restart() {
     for (const b of boxes) {
-        b.textContent = ""
+        b.firstChild.textContent = ""
     }
 }
 
 function check_solve(nq) {
     var s = ""
     for (const b of boxes) {
-        if (b.id != "X" && b.textContent == "") {
+        if (b.id != "X" && b.firstChild.textContent == "") {
             return
         } else {
-            s += b.textContent
+            s += b.firstChild.textContent
         }
     }
 
