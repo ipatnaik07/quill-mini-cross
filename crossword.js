@@ -11,36 +11,36 @@ bg_color = "#37505C"
 letter_color = "#5099ad"
 word_color = "#232d2e"
 
-across = ["1A:  TTYL",
-    "4A:  _____ cotta (type of clay)",
-    "6A:  Work with dough",
-    "7A:  Depart",
-    "8A:  Pig's home"
+down = ["5D:  See 5-Across",
+    "4D:  What food choices are on",
+    "1D:  Not well",
+    "2D:  Like an octagon or rock music?",
+    "3D:  Can be worn or put into the ground"
 ]
 
-down = ["4D:  Literally, tackle - ace",
-    "1D:  Hereditary units",
-    "2D:  Trick or _____",
-    "3D:  Thanksgiving sauce",
-    "5D:  Suffix for lemon or lime"
+across = ["1A:  Risk or wager",
+    "4A:  Created",
+    "5A:  With 5-Down, Proof School mascot",
+    "6A:  The one and ____",
+    "7A:  Generic male"
 ]
 
 text = (
-"Across:\n\
-    1.  TTYL\n\
-    4.  _____ cotta (type of clay)\n\
-    6.  Work with dough\n\
-    7.  Depart\n\
-    8.  Pig's home\n\n\
-Down:\n\
-    1.  Hereditary units\n\
-    2.  Trick or _____\n\
-    3.  Thanksgiving sauce\n\
-    4.  Literally, tackle - ace\n\
-    5.  Suffix for lemon or lime\n"
+"Down:\n\
+    1.  Not well\n\
+    2.  Like an octagon or rock music?\n\
+    3.  Can be worn or put into the ground\n\
+    4.  What food choices are on\n\
+    5.  With 5-Down, Proof School mascot\n\n\
+Across:\n\
+    1.  Risk or wager\n\
+    4.  Created\n\
+    5.  With 5-Down, Proof School mascot\n\
+    6.  The one and ____\n\
+    7.  Generic male\n"
 )
 
-solution = "GTGTERRAKNEADLEAVESTY"
+solution = "BETMADEHEDGEONLYGUY"
 
 const startGame = () => {
     for (let i = 0; i < 25; i++) {
