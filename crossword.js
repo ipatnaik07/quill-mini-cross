@@ -18,7 +18,7 @@ across = ["1A:  TTYL",
     "8A:  Pig's home"
 ]
 
-down = ["4D:  Literally, tackle - ace *",
+down = ["4D:  Literally, tackle - ace",
     "1D:  Hereditary units",
     "2D:  Trick or _____",
     "3D:  Thanksgiving sauce",
@@ -36,7 +36,7 @@ Down:\n\
     1.  Hereditary units\n\
     2.  Trick or _____\n\
     3.  Thanksgiving sauce\n\
-    4.  Literally, tackle - ace *\n\
+    4.  Literally, tackle - ace\n\
     5.  Suffix for lemon or lime\n"
 )
 
