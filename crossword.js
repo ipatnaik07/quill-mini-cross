@@ -11,36 +11,36 @@ bg_color = "#37505C"
 letter_color = "#5099ad"
 word_color = "#232d2e"
 
-across = ["1A:  TTYL",
-    "4A:  _____ cotta (type of clay)",
-    "6A:  Work with dough",
-    "7A:  Depart",
-    "8A:  Pig's home"
+down = ["5D:  Spiderman's best friend",
+    "4D:  See 5-Across",
+    "1D:  Etch",
+    "2D:  Urchin-eating aquatic mammal",
+    "3D:  “I get it”s"
 ]
 
-down = ["4D:  Literally, tackle - ace",
-    "1D:  Hereditary units",
-    "2D:  Trick or _____",
-    "3D:  Thanksgiving sauce",
-    "5D:  Suffix for lemon or lime"
+across = ["1A:  Bird or baby sound",
+    "4A:  Trail",
+    "5A:  With 4-Down, “coldest” Proof classroom",
+    "6A:  Santa's helpers",
+    "7A:  Santa's helpers"
 ]
 
 text = (
-"Across:\n\
-    1.  TTYL\n\
-    4.  _____ cotta (type of clay)\n\
-    6.  Work with dough\n\
-    7.  Depart\n\
-    8.  Pig's home\n\n\
-Down:\n\
-    1.  Hereditary units\n\
-    2.  Trick or _____\n\
-    3.  Thanksgiving sauce\n\
-    4.  Literally, tackle - ace\n\
-    5.  Suffix for lemon or lime\n"
+"Down:\n\
+    1.  Etch\n\
+    2.  Urchin-eating aquatic mammal\n\
+    3.  “I get it”s\n\
+    4.  See 5-Across\n\
+    5.  Spiderman's best friend\n\n\
+Across:\n\
+    1.  Bird or baby sound\n\
+    4.  Trail\n\
+    5.  With 4-Down, “coldest” Proof classroom\n\
+    6.  Santa's helpers\n\
+    7.  Santa's helpers\n"
 )
 
-solution = "GTGTERRAKNEADLEAVESTY"
+solution = "COOPATHNORTHELVESDEER"
 
 const startGame = () => {
     for (let i = 0; i < 25; i++) {
