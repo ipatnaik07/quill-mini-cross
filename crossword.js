@@ -14,7 +14,7 @@ word_color = "#232d2e"
 down = ["5D:  Spiderman's best friend",
     "4D:  See 5-Across",
     "1D:  Etch",
-    "2D:  Urchin-eating aquatic mammal",
+    "2D:  Urchin-eating mammal",
     "3D:  “I get it”s"
 ]
 
@@ -28,7 +28,7 @@ across = ["1A:  Bird or baby sound",
 text = (
 "Down:\n\
     1.  Etch\n\
-    2.  Urchin-eating aquatic mammal\n\
+    2.  Urchin-eating mammal\n\
     3.  “I get it”s\n\
     4.  See 5-Across\n\
     5.  Spiderman's best friend\n\n\
