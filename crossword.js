@@ -11,36 +11,36 @@ bg_color = "#37505C"
 letter_color = "#5099ad"
 word_color = "#232d2e"
 
-down = ["5D:  Spiderman's best friend",
-    "4D:  See 5-Across",
-    "1D:  Etch",
-    "2D:  Urchin-eating mammal",
-    "3D:  “I get it”s"
+across = ["1A:  Massage or manicure places",
+    "5A:  Tuesday morning meeting fixture",
+    "6A:  Gang",
+    "7A:  One short video on Instagram",
+    "8A:  Gold, silver, or bronze"
 ]
 
-across = ["1A:  Bird or baby sound",
-    "4A:  Trail",
-    "5A:  With 4-Down, “coldest” Proof classroom",
-    "6A:  Santa's helpers",
-    "7A:  Santa's helpers"
+down = ["6D:  “The Office” receptionist",
+    "1D:  Mushroom reproductive cell",
+    "2D:  Got ready for a photo",
+    "3D:  Where a sailor might be",
+    "4D:  Get bigger"
 ]
 
 text = (
-"Down:\n\
-    1.  Etch\n\
-    2.  Urchin-eating mammal\n\
-    3.  “I get it”s\n\
-    4.  See 5-Across\n\
-    5.  Spiderman's best friend\n\n\
-Across:\n\
-    1.  Bird or baby sound\n\
-    4.  Trail\n\
-    5.  With 4-Down, “coldest” Proof classroom\n\
-    6.  Santa's helpers\n\
-    7.  Santa's helpers\n"
+"Across:\n\
+    1.  Massage or manicure places\n\
+    5.  Tuesday morning meeting fixture\n\
+    6.  Gang\n\
+    7.  One short video on Instagram\n\
+    8.  Gold, silver, or bronze\n\n\
+Down:\n\
+    1.  Mushroom reproductive cell\n\
+    2.  Got ready for a photo\n\
+    3.  Where a sailor might be\n\
+    4.  Get bigger\n\
+    6.  “The Office” receptionist\n"
 )
 
-solution = "COOPATHNORTHELVESDEER"
+solution = "SPASPOTWPOSSEAREELMEDAL"
 
 const startGame = () => {
     for (let i = 0; i < 25; i++) {
