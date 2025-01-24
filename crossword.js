@@ -40,7 +40,7 @@ Down:\n\
     6.  “The Office” receptionist\n"
 )
 
-solution = "SPASPOTWPOSSEAREILMETAL"
+solution = "SPASPOTWPOSSEARIELMETAL"
 
 const startGame = () => {
     for (let i = 0; i < 25; i++) {
