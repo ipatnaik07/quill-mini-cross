@@ -11,36 +11,36 @@ bg_color = "#37505C"
 letter_color = "#5099ad"
 word_color = "#232d2e"
 
-across = ["1A:  Massage or manicure places",
-    "5A:  Tuesday morning meeting fixture",
-    "6A:  Gang",
-    "7A:  The Little Mermaid",
-    "8A:  Gold, silver, or bronze"
+across = ["1A:  A small amount",
+    "4A:  Pdf, txt, png, etc.",
+    "5A:  -- --- •-• ••• • code",
+    "6A:  Prefix meaning self",
+    "7A:  Sob"
 ]
 
-down = ["6D:  “The Office” receptionist",
-    "1D:  Mushroom reproductive cell",
-    "2D:  Assume",
-    "3D:  Where a sailor might be",
-    "4D:  Get bigger"
+down = ["5D:  Commonly seen computer at Proof",
+    "4D:  Number of blocks Proof will have next year",
+    "1D:  Not clean",
+    "2D:  In addition",
+    "3D:  Busy buzzer"
 ]
 
 text = (
 "Across:\n\
-    1.  Massage or manicure places\n\
-    5.  Tuesday morning meeting fixture\n\
-    6.  Gang\n\
-    7.  The Little Mermaid\n\
-    8.  Gold, silver, or bronze\n\n\
+    1.  A small amount\n\
+    4.  Pdf, txt, png, etc.\n\
+    5.  -- --- •-• ••• • code\n\
+    6.  Prefix meaning self\n\
+    7.  Sob\n\n\
 Down:\n\
-    1.  Mushroom reproductive cell\n\
-    2.  Assume\n\
-    3.  Where a sailor might be\n\
-    4.  Get bigger\n\
-    6.  “The Office” receptionist\n"
+    1.  Not clean\n\
+    2.  In addition\n\
+    3.  Busy buzzer\n\
+    4.  Number of blocks Proof will have next year\n\
+    5.  Commonly seen computer at Proof\n"
 )
 
-solution = "SPASPOTWPOSSEARIELMETAL"
+solution = "DABFILEMORSEAUTOCRY"
 
 const startGame = () => {
     for (let i = 0; i < 25; i++) {
