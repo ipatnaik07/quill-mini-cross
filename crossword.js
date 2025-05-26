@@ -11,36 +11,36 @@ bg_color = "#37505C"
 letter_color = "#5099ad"
 word_color = "#232d2e"
 
-across = ["1A:  A small amount",
-    "4A:  Pdf, txt, png, etc.",
-    "5A:  -- --- •-• ••• • code",
-    "6A:  Prefix meaning self",
-    "7A:  Sob"
+across = ["1A:  Seen in F=ma and E=mc²",
+    "5A:  Lunch spot next to Proof",
+    "6A:  Arrangement of rows and columns",
+    "7A:  Uproar",
+    "8A:  Python command to count characters in a string"
 ]
 
-down = ["5D:  Commonly seen computer at Proof",
-    "4D:  Number of blocks Proof will have next year",
-    "1D:  Not clean",
-    "2D:  In addition",
-    "3D:  Busy buzzer"
+down = ["5D:  Philosopher Marx",
+    "1D:  Proofnik who graduated and joined in 2024?",
+    "2D:  Kitchenwear",
+    "3D:  What you might do to a fly",
+    "4D:  Speak"
 ]
 
 text = (
 "Across:\n\
-    1.  A small amount\n\
-    4.  Pdf, txt, png, etc.\n\
-    5.  -- --- •-• ••• • code\n\
-    6.  Prefix meaning self\n\
-    7.  Sob\n\n\
+    1.  Seen in F=ma and E=mc²\n\
+    5.  Lunch spot next to Proof\n\
+    6.  Arrangement of rows and columns\n\
+    7.  Uproar\n\
+    8.  Python command to count characters in a string\n\n\
 Down:\n\
-    1.  Not clean\n\
-    2.  In addition\n\
-    3.  Busy buzzer\n\
-    4.  Number of blocks Proof will have next year\n\
-    5.  Commonly seen computer at Proof\n"
+    1.  Proofnik who graduated and joined in 2024?\n\
+    2.  Kitchenwear\n\
+    3.  What you might do to a fly\n\
+    4.  Speak\n\
+    5.  Philosopher Marx\n"
 )
 
-solution = "DABFILEMORSEAUTOCRY"
+solution = "MASSKAPWAARRAYRIOTLEN"
 
 const startGame = () => {
     for (let i = 0; i < 25; i++) {
